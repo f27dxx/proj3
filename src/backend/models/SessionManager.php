@@ -31,8 +31,8 @@
         }
         // print_r( $diff ) ;
     
-        //if access count greater or equal to 1000 output a json error
-        if(isset($_SESSION['accessCount']) && $_SESSION['accessCount'] >= 1000){
+        //if access count greater or equal to 500 return false
+        if(isset($_SESSION['accessCount']) && $_SESSION['accessCount'] >= 500){
           return false; 
         }
         return true;
